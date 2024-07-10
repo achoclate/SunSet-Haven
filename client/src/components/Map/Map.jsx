@@ -1,5 +1,5 @@
 import React from 'react'
-// import {MapContainer, TileLayer} from 'react-leaflet'
+import {MapContainer, TileLayer} from 'react-leaflet'
 import GeoCoderMarker from '../GeoCorderMarker/GeoCoderMarker'
 
 const Map = ({address, city, country}) => {
