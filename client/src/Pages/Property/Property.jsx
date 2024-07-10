@@ -82,7 +82,7 @@ const Property = () => {
               {property.description}
             </span>
 
-            address
+            {/* address */}
             <div className="flexStart" style={{ gap: '1rem', marginTop: '1rem' }}>
               <MdLocationPin size={25} />
               <span className="secondaryText">
