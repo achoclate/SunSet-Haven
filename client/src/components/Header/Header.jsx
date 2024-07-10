@@ -42,12 +42,12 @@ const Header = () => {
         </OutsideClickHandler>
 
         {/* for medium and small screens */}
-        {/* <div
+        <div
           className="menu-icon"
           onClick={() => setMenuOpened((prev) => !prev)}
         >
           <BiMenuAltRight size={30} />
-        </div> */}
+        </div>
       </div>
     </section>
   );
