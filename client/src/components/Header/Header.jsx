@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Header.css";
-// import { Link, NavLink } from "react-router-dom";
-// import { BiMenuAltRight } from "react-icons/bi";
-// import { getMenuStyles } from "../../utils/common";
-// import useHeaderColor from "../../hooks/useHeaderColor";
-// import OutsideClickHandler from "react-outside-click-handler";
+import { Link, NavLink } from "react-router-dom";
+import { BiMenuAltRight } from "react-icons/bi";
+import { getMenuStyles } from "../../utils/common";
+import useHeaderColor from "../../hooks/useHeaderColor";
+import OutsideClickHandler from "react-outside-click-handler";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
