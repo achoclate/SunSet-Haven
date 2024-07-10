@@ -11,17 +11,17 @@ import Value from "../components/Value/Value";
 
 const Website = () => {
   return (
-//     <div className="App">
-//     <div>
-//       <div className="white-gradient" />
-//       <Hero />
-//     </div>
-//     <Companies />
-//     <Residencies/>
-//     <Value/>
-//     <Contact/>
-//     <GetStarted/>
-//   </div>
+    <div className="App">
+    <div>
+      <div className="white-gradient" />
+      <Hero />
+    </div>
+    <Companies />
+    <Residencies/>
+    <Value/>
+    <Contact/>
+    <GetStarted/>
+  </div>
   )
 }
 
