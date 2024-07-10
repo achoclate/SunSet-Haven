@@ -36,7 +36,7 @@ const Value = () => {
         </div>
 
         {/* Right side */}
-        {/* <div className="flexColStart v-right">
+        <div className="flexColStart v-right">
           <span className="orangeText">What We Offer</span>
           <span className="primaryText">The Magic We Bring to Your Doorstep</span>
           <span className="secondaryText">
@@ -70,7 +70,7 @@ const Value = () => {
               </AccordionItem>
             ))}
           </Accordion>
-        </div> */}
+        </div>
       </div>
     </section>
   );
