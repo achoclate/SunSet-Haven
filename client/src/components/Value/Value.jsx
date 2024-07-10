@@ -13,17 +13,17 @@ import "./Value.css";
 const Value = () => {
   const [expandedItems, setExpandedItems] = useState([0]); // State to track expanded items
 
-//   const toggleAccordion = (index) => {
-//     // Function to toggle an accordion item's expanded state
-//     const currentIndex = expandedItems.indexOf(index);
-//     if (currentIndex === -1) {
-//       setExpandedItems([...expandedItems, index]);
-//     } else {
-//       const newExpandedItems = [...expandedItems];
-//       newExpandedItems.splice(currentIndex, 1);
-//       setExpandedItems(newExpandedItems);
-//     }
-//   };
+  const toggleAccordion = (index) => {
+    // Function to toggle an accordion item's expanded state
+    const currentIndex = expandedItems.indexOf(index);
+    if (currentIndex === -1) {
+      setExpandedItems([...expandedItems, index]);
+    } else {
+      const newExpandedItems = [...expandedItems];
+      newExpandedItems.splice(currentIndex, 1);
+      setExpandedItems(newExpandedItems);
+    }
+  };
 
   return (
     <section id="value" className="v-wrapper">
