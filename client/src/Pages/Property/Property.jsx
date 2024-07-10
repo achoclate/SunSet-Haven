@@ -36,71 +36,71 @@ const Property = () => {
   if (!property) return <p>Property not found.</p>;
 
   return (
-    // <div className="Wrapper">
-    //   <h1>{property.name}</h1>
-    //   <div className="flexCenter property-container">
-    //     <img
-    //       src={`http://localhost:5000/images/${property.imageUrl}`}
-    //       className="card-img-top"
-    //       alt={property.name}
-    //     />
+    <div className="Wrapper">
+      <h1>{property.name}</h1>
+      <div className="flexCenter property-container">
+        <img
+          src={`http://localhost:5000/images/${property.imageUrl}`}
+          className="card-img-top"
+          alt={property.name}
+        />
 
-    //     <div className="flexCenter property-details">
-    //       {/* left */}
-    //       <div className="flexColStart left">
-    //         {/* head */}
-    //         <div className="flexStart head">
-    //           <span className="primaryText">{property.title}</span> {/* Changed data to property */}
-    //           <span className="orangeText" style={{ fontSize: '1.5rem' }}>
-    //             $ {property.price}
-    //           </span>
-    //         </div>
+        <div className="flexCenter property-details">
+          {/* left */}
+          <div className="flexColStart left">
+            {/* head */}
+            <div className="flexStart head">
+              <span className="primaryText">{property.title}</span> {/* Changed data to property */}
+              <span className="orangeText" style={{ fontSize: '1.5rem' }}>
+                $ {property.price}
+              </span>
+            </div>
 
-    //         {/* facilities */}
-    //         <div className="flexStart facilities">
-    //           {/* bathrooms */}
-    //           <div className="flexStart facility">
-    //             <FaShower size={20} color="#1F3E72" />
-    //             <span>{property.facilities?.bathrooms} Bathrooms</span> {/* Added safe navigation */}
-    //           </div>
+            {/* facilities */}
+            <div className="flexStart facilities">
+              {/* bathrooms */}
+              <div className="flexStart facility">
+                <FaShower size={20} color="#1F3E72" />
+                <span>{property.facilities?.bathrooms} Bathrooms</span> {/* Added safe navigation */}
+              </div>
 
-    //           {/* parkings */}
-    //           <div className="flexStart facility">
-    //             <AiTwotoneCar size={20} color="#1F3E72" />
-    //             <span>{property.facilities?.parkings} Parking</span> {/* Added safe navigation */}
-    //           </div>
+              {/* parkings */}
+              <div className="flexStart facility">
+                <AiTwotoneCar size={20} color="#1F3E72" />
+                <span>{property.facilities?.parkings} Parking</span> {/* Added safe navigation */}
+              </div>
 
-    //           {/* rooms */}
-    //           <div className="flexStart facility">
-    //             <MdMeetingRoom size={20} color="#1F3E72" />
-    //             <span>{property.facilities?.bedrooms} Room/s</span> {/* Added safe navigation */}
-    //           </div>
-    //         </div>
+              {/* rooms */}
+              <div className="flexStart facility">
+                <MdMeetingRoom size={20} color="#1F3E72" />
+                <span>{property.facilities?.bedrooms} Room/s</span> {/* Added safe navigation */}
+              </div>
+            </div>
 
-    //         {/* description */}
-    //         <span className="secondaryText" style={{ textAlign: 'justify' }}>
-    //           {property.description}
-    //         </span>
+            {/* description */}
+            <span className="secondaryText" style={{ textAlign: 'justify' }}>
+              {property.description}
+            </span>
 
-    //         {/* address */}
-    //         <div className="flexStart" style={{ gap: '1rem', marginTop: '1rem' }}>
-    //           <MdLocationPin size={25} />
-    //           <span className="secondaryText">
-    //             {property.address} {property.city} {property.country}
-    //           </span>
-    //         </div>
-    //       </div>
+            address
+            <div className="flexStart" style={{ gap: '1rem', marginTop: '1rem' }}>
+              <MdLocationPin size={25} />
+              <span className="secondaryText">
+                {property.address} {property.city} {property.country}
+              </span>
+            </div>
+          </div>
 
-    //       {/* right side */}
-    //       <div className="map">
-    //         <Map
-    //           address={property.address}
-    //           city={property.city}
-    //           country={property.country}
-    //         />
-    //       </div>
-    //     </div>
-    //   </div>
+          {/* right side */}
+          <div className="map">
+            <Map
+              address={property.address}
+              city={property.city}
+              country={property.country}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
