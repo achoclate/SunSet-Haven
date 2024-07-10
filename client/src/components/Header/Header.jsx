@@ -34,9 +34,9 @@ const Header = () => {
               <a href="mailto:nyabokeann99@gmail.com">Contact</a>
            {/* login button */}
            {/* {!isAuthenticated ? ( */}
-              {/* <button className="button" >
+              <button className="button" >
                 Login
-              </button> */}
+              </button>
             
           </div>
         </OutsideClickHandler>
