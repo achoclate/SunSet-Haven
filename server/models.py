@@ -13,3 +13,5 @@ class User(db.Model):
     username = db.Column(db.String(50), nullable=False)
     password = db.Column(db.String(100), nullable=False)  # Note: In practice, hash passwords before saving
     
+    def _repr_(self):
+        return f'<User {self.username}>'
