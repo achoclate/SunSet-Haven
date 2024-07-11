@@ -2,7 +2,7 @@ import { HiShieldCheck } from "react-icons/hi";
 import { MdCancel, MdAnalytics } from "react-icons/md";
 const data = [
   {
-    icon: <HiShieldCheck/>,
+    icon: <HiShieldCheck />,
     heading: "Optimal market interest rates",
     detail:
       "Discover the most advantageous interest rates available, tailored to meet your financial goals and aspirations.",
