@@ -84,7 +84,7 @@ const Header = () => {
         <div
           className="menu-icon"
           onClick={() => setMenuOpened((prev) => !prev)}
-          style={{ color: 'black' }}
+      
         >
           <BiMenuAltRight size={30} />
         </div>
