@@ -1,4 +1,4 @@
-![Sunset Haven](/client/public/images/sunset.jpeg)
+<img src="/public/sunset.jpeg" alt="Sunset Haven" width="1100" height="600">
 
 # Sunset Haven 
 
