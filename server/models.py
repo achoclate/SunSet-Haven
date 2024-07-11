@@ -15,3 +15,13 @@ class User(db.Model):
     
     def _repr_(self):
         return f'<User {self.username}>'
+
+
+class Property(db.Model):
+    __tablename__ = "properties"
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    location = db.Column(db.String(255), nullable=False)
+    imageUrl = db.Column(db.String(255), nullable=False)
+    price = db.Column(db.Integer, nullable=False)
