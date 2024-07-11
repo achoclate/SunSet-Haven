@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Payment.css'; // Import your Payment.css stylesheet
 
 const Payment = ({ propertyId }) => {
-  const [paymentMethod, setPaymentMethod] = useState('visa'); // Default payment method
+  const [paymentMethod, setPaymentMethod] = useState('visa'); 
   const [cardNumber, setCardNumber] = useState('');
   const [expiryDate, setExpiryDate] = useState('');
   const [cvv, setCvv] = useState('');
@@ -19,18 +19,17 @@ const Payment = ({ propertyId }) => {
       // Prepare data based on payment method
       let requestData = {};
       if (paymentMethod === 'visa') {
-        // Payment via Visa card logic (not shown for brevity)
-        // Implement actual payment processing logic here if required
+  
       } else if (paymentMethod === 'mpesa') {
         // Payment via M-Pesa
         requestData = {
-          amount: '100', // Adjust with actual amount
-          currency: 'KES', // Adjust with actual currency
+          amount: '100', 
+          currency: 'KES', 
           phone: phone,
         };
       } else if (paymentMethod === 'paypal') {
-        // Payment via PayPal logic (not shown for brevity)
-        // Implement actual payment processing logic here if required
+        // Payment via PayPal logic 
+        
       }
 
       // Make API call to backend to process payment
