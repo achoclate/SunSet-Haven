@@ -25,3 +25,6 @@ class Property(db.Model):
     location = db.Column(db.String(255), nullable=False)
     imageUrl = db.Column(db.String(255), nullable=False)
     price = db.Column(db.Integer, nullable=False)
+    
+    def __repr__(self):
+        return f'<Property {self.name}>'
